@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "ikabot",
+      "script": "bin/hubot",
+      "args": "--name ikabot --adapter slack",
+      "exec_interpreter": "bash",
+      "env": {
+        "HUBOT_SLACK_TOKEN": "unko-01234567890-unkounkounkounkounkounko",
+        "SPLATHON_SLACK_WELCOME_LINK": "https://unko.example.com",
+        "A3RT_TOKEN": "unko-01234567890-unkounkounkounkounkounko"
+      }
+    }
+  ]
+}
