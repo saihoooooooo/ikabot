@@ -34,19 +34,19 @@ welcome = (robot, msg) ->
     message = "@#{msg.message.user.name} #{msg.random icon.messages}"
 
     attachments = [
-      fallback: 'はじめての方へ',
-      color: '#36a64f',
-      pretext: "",
-      title: 'はじめての方へ',
+      fallback: 'はじめての方へ'
+      color: '#36a64f'
+      pretext: ''
+      title: 'はじめての方へ'
       title_link: process.env.SPLATHON_SLACK_WELCOME_LINK
-      text: 'Splathon Slackのご利用ルールです',
-      footer: 'Splathon',
+      text: 'Splathon Slackのご利用ルールです'
+      footer: 'Splathon'
       fields: [
-        title: '！必ずご一読ください！',
-        value: 'https://bit.ly/splathon',
+        title: '！必ずご一読ください！'
+        value: process.env.SPLATHON_SLACK_WELCOME_LINK
         short: false
-      ],
-      footer: 'Splathon',
+      ]
+      footer: 'Splathon'
       ts: '1511263020'
     ]
 
